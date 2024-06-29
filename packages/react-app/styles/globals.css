@@ -1,3 +1,228 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ */
+ #root {
+    padding: 0;
+    margin: 0;
+    --grey-bg: #D9D9D9;
+    --light-grey: '#ECECEC';
+    --ligther: '#CAC4D0';
+    --svg-color: #1C1B1F
+  }
+  
+  body {
+    font-size: 16;
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: #000;
+    margin-top: 20px;
+    background-color: #E4F0F6
+  }
+  ::-webkit-scrollbar {
+    width: 0px
+  }
+  
+  
+  .card {
+    flex-shrink: 0;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .gift-card {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid green;
+    background-image: url("/images/robin.jpg");
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  
+  
+  
+  .cards-wrapper {
+  
+    background-color: #F3F7FC;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .cards-wrapper h1, svg {
+    padding: 0 15px
+  }
+  
+  .svg {
+    color: var(--svg-color) !important;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  img {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .container{
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 20px; 
+  }
+  .logo {
+    width: 80px;
+    object-fit: contain;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  .header-content h3 {
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .balance-wrapper{
+    width: 100%;
+    background-color: #F3F7FC !important;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .service-card {
+    color: #333;
+    border-radius: 10px;;
+    background: #F3F7FC;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  }
+  .service-card img {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .service-card p {
+    text-align: center;
+  }
+  
+  .egift-placeholder{
+    margin-bottom: 30px;
+    background-color: #F3F7FC;
+    width: 100%;
+    padding: 20px;
+  }
+  .create-form input[type=text], .create-form input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #F3F7FC;
+  
+  }
+  
+  .create-form .form-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #F3F7FC;
+  
+  }
+  
+  .create-form button {
+    padding: 14px 20px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #000;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .history-wrapper {
+    background-color: #EEE8F4;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  .wrapper-dets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .history-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  
+  }
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .icon-wrapper small {
+    text-align: center;
+  }
+  
+  @media (max-width: 700px) {
+    .service-list img {
+      height: auto;
+    } 
+    .header-top{
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+    .service-card img {
+      height: auto
+    }
+  }

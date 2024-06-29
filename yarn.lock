@@ -7922,6 +7922,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lucide-react@npm:^0.399.0":
+  version: 0.399.0
+  resolution: "lucide-react@npm:0.399.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 017a2c624e2fd5f29777e18d2607b3c2f24ebfb1600b6978392bb03a51b48eff44888a966b6ddf38bf204aaf10f1ef50b82a1f0a1878996e38cd35f0b934abb6
+  languageName: node
+  linkType: hard
+
 "make-error@npm:^1.1.1":
   version: 1.3.6
   resolution: "make-error@npm:1.3.6"
@@ -8198,6 +8207,8 @@ __metadata:
 "minipay-app@workspace:.":
   version: 0.0.0-use.local
   resolution: "minipay-app@workspace:."
+  dependencies:
+    lucide-react: ^0.399.0
   languageName: unknown
   linkType: soft
 
