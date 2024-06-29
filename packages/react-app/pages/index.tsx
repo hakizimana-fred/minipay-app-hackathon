@@ -19,7 +19,9 @@ export default function Home() {
    (() => {
      if (typeof window !== "undefined") {
        const cards: any = localStorage.getItem("giftcards")
-       setSavedCards(JSON.parse(cards))
+       if (cards) {
+            setSavedCards(JSON.parse(cards))
+       }
      }
    })()
   }, [])
@@ -104,7 +106,7 @@ const getProviderOrSigner = async () => {
 
     return (
         <div className="wrapper">
-        <div className="balance-wrapper">
+        {/* <div className="balance-wrapper">
             {isConnected ? (
                 <>
                 <h1>Your Wallet</h1>
@@ -157,7 +159,7 @@ const getProviderOrSigner = async () => {
 
     <h2 style={{backgroundColor: '#EEE8F4', padding: 10}}>Local businesses</h2>
     <div className='service-list'>  
-     {SERVICES.map((service) => (
+     {SERVICES && SERVICES.map((service) => (
         <div className='service-card' key={service.name}>
             <img src={service.img} className='service-img' />
             <div>
@@ -169,7 +171,8 @@ const getProviderOrSigner = async () => {
             </div>
         </div>
      ))}
-    </div>
+    </div> */}
+    <h1>Debugging {userAddress}</h1>
     </div>
     );
 }
