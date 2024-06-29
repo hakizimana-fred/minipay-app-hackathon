@@ -106,7 +106,7 @@ const getProviderOrSigner = async () => {
 
     return (
         <div className="wrapper">
-        {/* <div className="balance-wrapper">
+        <div className="balance-wrapper">
             {isConnected ? (
                 <>
                 <h1>Your Wallet</h1>
@@ -171,8 +171,8 @@ const getProviderOrSigner = async () => {
             </div>
         </div>
      ))}
-    </div> */}
-    <h1>Debugging {userAddress}</h1>
+    </div>
+
     </div>
     );
 }
