@@ -45,6 +45,8 @@ export default   function create() {
   }
 };
 
+// eslint-disable-next-line react-hooks/rules-of-hooks
+const router = useRouter()
 
 const handleSubmit = async (e: any) => {
   e.preventDefault()
@@ -70,12 +72,12 @@ const handleSubmit = async (e: any) => {
   console.log(tx, 'tx')
   localStorage.setItem('giftcards', JSON.stringify(cards))
   alert("You have successfully created a gift card!!")
+  router.push('/')
 }catch(err: any){
   console.log(err.message)
 }
 }
 
-console.log('my random byte', randomBytes)
 
  
   return (
